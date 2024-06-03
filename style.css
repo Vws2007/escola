@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-image: url(./img/backgroud.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main h1 {
+    width: 340px;
+    margin: 5px auto;
+    color: rgb(255, 255, 255);
+    
+}
+main p {
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-indent: 10px;
+}
+main {
+    height: 320px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    width: 440px;
+    height: auto;
+    padding: 20px;
+    margin: 50px auto;
+}
+h3 {
+    font-size: 10px;
+    color: #fff;
+    margin-top: 10px;
+}
+input#verificar {
+    display: block;
+    padding: 4px;
+    border-radius: 10px;
+}
+input#verification {
+    display: block;
+    padding: 4px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(142, 30, 207, 0.742);
+    margin: auto;
+    width: 80px;
+    border: 2px solid transparent;
+    margin-top: 20px;
+}
+input#verification:hover {
+    background-color: rgba(165, 74, 255, 0.441);
+}
+input#placa {
+    text-transform: uppercase;
+}
+input {
+    display: block;
+    padding: 4px;
+    border-radius: 10px;
+}
+#res {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 410px;
+    margin: auto;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.529);
+}

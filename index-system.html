@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistemas de Multas</title>
+</head>
+<body>
+    <main>
+
+        <h1>Sistemas de Valores</h1>
+        <h3>Digite a placa do Veiculo:</h3>
+        <input type="text" name="placa" id="placa" required>
+        <h3>Digite o chassi do Veiculo (Opcional):</h3>
+        <input type="number" name="chassi" id="chassi">
+        <h3>Digite a Velocidade do Veiculo:</h3>
+        <input type="number" name="txtvel" id="txtvel" required>
+        <p>Calcule o valor da multa conforme a velocidade do veiculo indicada!</p>
+        <input type="button" value="verificar" id="verification" onclick="calcular()">
+        <img src="./img/" alt="">
+        <div id="res">
+
+        </div>
+    </main>
+    <script>
+        
+        function calcular() {
+                var txtv = window.document.querySelector('input#txtvel');
+                var vel = Number(txtv.value)
+                var res = window.document.querySelector('div#res')
+                res.innerHTML = `A velocidade é de ${vel} Km/h`
+                if (vel > 80) {
+                    res.innerHTML += ` <em><strong> O veiculo ultrapassou o limite de velocidade e foi multado, o valor da multa é de R$200,00<strong><em>`
+                } else {
+                     res.innerHTML += `<strong> O veiculo esta dentro do limite de velocidade e não foi multado!<strong>`   
+                }
+                if (vel > 200) {
+                    res.innerHTML = ` <em><strong> O veiculo esta em alta velocidade e cometeu uma inflação grave, o valor da multa é de R$1997,90<strong><em>`
+                }
+                }
+    </script>
+</body>
+</html>
