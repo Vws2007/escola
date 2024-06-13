@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/auto-remove.ico.png" type="image/x-icon">
     <title>Sistemas de Multas</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
         <input type="number" name="chassi" id="chassi">
         <h3>Digite a Velocidade do Veiculo:</h3>
         <input type="number" name="txtvel" id="txtvel" required>
+        <img src="./img/auto.png.png" id="autoImg" alt="">
         <p>Calcule o valor da multa conforme a velocidade do veiculo indicada!</p>
         <input type="button" value="verificar" id="verification" onclick="calcular()">
-        <img src="./img/" alt="">
         <div id="res">
 
         </div>
@@ -30,7 +31,7 @@
                 var vel = Number(txtv.value)
                 var res = window.document.querySelector('div#res')
                 res.innerHTML = `A velocidade é de ${vel} Km/h`
-                if (vel > 80) {
+                if ( txtv > 80) {
                     res.innerHTML += ` <em><strong> O veiculo ultrapassou o limite de velocidade e foi multado, o valor da multa é de R$200,00<strong><em>`
                 } else {
                      res.innerHTML += `<strong> O veiculo esta dentro do limite de velocidade e não foi multado!<strong>`   
